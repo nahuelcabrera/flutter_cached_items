@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text('Flutter shared preferences'),
@@ -106,7 +107,7 @@ class _HomeState extends State<Home> {
                 updateStrings(s);
               },
               child: ListTile(
-
+                title: Text(s),
               ),
 
             )).toList(),
